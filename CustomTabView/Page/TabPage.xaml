@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CustomTabView.Page.TabPage"
+             xmlns:mauiTabView="clr-namespace:CustomTabView.Control"
+             Title="TabPage">
+    <mauiTabView:TabView ActiveTabIndex="3" >
+        <mauiTabView:TabView.Tabs>
+            <mauiTabView:Tab Title="LEAVE" Icon="dotnet_bot" >
+                <mauiTabView:Tab.Content>
+                    <Label Text="Tab1 Label"/>
+                </mauiTabView:Tab.Content>
+            </mauiTabView:Tab>
+            <mauiTabView:Tab Title="ATTENDANCE" Icon="dotnet_bot">
+                <mauiTabView:Tab.Content>
+                    <Label Text="Tab2 Label"/>
+                </mauiTabView:Tab.Content>
+            </mauiTabView:Tab>
+            <mauiTabView:Tab Title="REIMBURSEMENT" Icon="dotnet_bot">
+                <mauiTabView:Tab.Content>
+                    <Label Text="Tab3 Label"/>
+                </mauiTabView:Tab.Content>
+            </mauiTabView:Tab>
+            <mauiTabView:Tab Title="OVER TIME" Icon="dotnet_bot">
+                <mauiTabView:Tab.Content>
+                    <Label Text="Tab4 Label"/>
+                </mauiTabView:Tab.Content>
+            </mauiTabView:Tab>
+            <mauiTabView:Tab Title="OFF TIME" Icon="dotnet_bot">
+                <mauiTabView:Tab.Content>
+                    <Label Text="Tab5 Label"/>
+                </mauiTabView:Tab.Content>
+            </mauiTabView:Tab>
+        </mauiTabView:TabView.Tabs>
+    </mauiTabView:TabView>
+</ContentPage>
