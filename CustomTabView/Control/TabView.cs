@@ -67,6 +67,11 @@ namespace CustomTabView.Control
 
         IView BuildTabs()
         {
+            var mainContainer = new ScrollView()
+            {
+                Orientation = ScrollOrientation.Horizontal,
+
+            };
             var view = new HorizontalStackLayout()
             {
                 HorizontalOptions = LayoutOptions.Center,
@@ -89,9 +94,10 @@ namespace CustomTabView.Control
                 tabHeader.Children.Add(new Image() { Source = tab.Icon, HorizontalOptions = LayoutOptions.Center, WidthRequest = 30, HeightRequest = 30 });
                 tabHeader.Children.Add(new Label() { Text = tab.Title, HorizontalOptions = LayoutOptions.Center });
                 view.Children.Add(tabHeader);
+                mainContainer.Content = view;
             }
 
-            return view;
+            return mainContainer;
         }
         IView? GetActiveTab()
         {
